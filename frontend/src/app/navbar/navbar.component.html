@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-    <a class="navbar-brand" href="#">Blogging Blogs</a>
+    <a class="navbar-brand" href="#"></a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -14,7 +14,7 @@
                 <a class="nav-link" routerLink="/login" (click)="isMenuCollapsed=true">Login</a>
             </li>
             <li class="nav-item" [routerLinkActive]="['active']">
-                <a class="nav-link" routerLink="/signup" (click)="isMenuCollapsed=true">Signup</a>
+                <a class="nav-link" routerLink="/signup" (click)="isMenuCollapsed=true">Register</a>
             </li>
         </ul>
         <ul *ngIf="loginStatus" class="navbar-nav">
@@ -35,11 +35,6 @@
                 <a class="nav-link cursor-pointer" (click)="logout()">Log Out</a>
             </li>
         </ul>
-        <ul class="navbar-nav ml-auto navbar-expand-lg navbar-expand-sm d-flex flex-row">
-            <li class="nav-item mr-2 cursor-pointer"><a class="nav-link"><i class="fa fa-facebook"></i></a></li>
-            <li class="nav-item mr-2 cursor-pointer"><a class="nav-link"><i class="fa fa-instagram"></i></a></li>
-            <li class="nav-item mr-2 cursor-pointer"><a class="nav-link"><i class="fa fa-google"></i></a></li>
-            <li class="nav-item mr-2 cursor-pointer"><a class="nav-link"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
+        
     </div>
 </nav>

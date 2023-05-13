@@ -1,17 +1,28 @@
-@media only screen and (min-width: 320px) {
-  .img-h {
-    height: 300px;
-  }
+.fluid-container {
+  background-image: url("https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YmxvZyUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80");
+  height: 100%;
+  width: 100%;
+  background-size: 1225px 650px;
+  background-repeat: no-repeat;
 }
-
-@media only screen and (min-width: 769px) {
-  .img-h {
-    height: 500px;
-  }
+.btn {
+  margin-top:30% ;
+  margin-left: 50%;
+  border: none;
+  outline: none;
+  padding: 16px 20px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  outline: none;
+  background-image: linear-gradient(
+    15deg,
+    #99005e 20%,
+    #005f99 118%,
+    #99005e 100%
+  );
 }
-
-@media only screen and (min-width: 1025px) {
-  .img-h {
-    height: 600px;
-  }
+.heading{
+  text-align: center;
+  margin-top:30% ;
 }

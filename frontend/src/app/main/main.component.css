@@ -1,5 +1,5 @@
 .first-main-box {
-  background-image: url("../../assets/4.jpg");
+  /* background-image: url(""); */
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
@@ -59,7 +59,7 @@
 }
 
 .second-main-box {
-  background-image: url("../../assets/5.jpg");
+  /* background-image: url("../../assets/5.jpg"); */
   background-size: cover;
   background-attachment: fixed;
   opacity: 0.8;
@@ -81,9 +81,30 @@
 .second-main-text h4 {
   font-family: "ABeeZee", sans-serif;
 }
+.fourth-main-text h4 {
+  font-family: "ABeeZee", sans-serif;
+}
+.fourth-main-box {
+  /* background-image: url("../../assets/5.jpg"); */
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.8;
+  text-align: center;
+  padding: 210px 0px;
+}
 
+.fourth-main-box h1 {
+  margin: 0;
+  font-family: "ABeeZee", sans-serif;
+}
+
+.fourth-main-text {
+  width: 55%;
+  margin: 0 auto;
+  color: black;
+}
 .third-main-box {
-  background-image: url("../../assets/6.jpg");
+  /* background-image: url("../../assets/6.jpg"); */
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
