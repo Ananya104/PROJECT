@@ -1,5 +1,6 @@
 const { commentModel } = require('../models');
 
+
 const comment = {
 	getParticularPostComments: async (req, res) => {
 		let postId = req.query.postId;

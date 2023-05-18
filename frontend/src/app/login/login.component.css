@@ -1,5 +1,6 @@
 .login-background {
-  background: url("../../assets/20.jpg") no-repeat;
+  /* background: url("../../assets/20.jpg") no-repeat; */
+  background-color: powderblue;
   background-size: cover;
   /* background: linear-gradient(#020024, #238c98, #00d4ff) no-repeat center center fixed; */
   height: 92.3%;

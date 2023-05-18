@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+<nav class="navbar navbar-expand-md bg-info navbar-dark">
     <a class="navbar-brand" href="#"></a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -8,20 +8,27 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul *ngIf="!loginStatus" class="navbar-nav">
             <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
-                <a class="nav-link" routerLink="/" (click)="isMenuCollapsed=true">Home</a>
+                <a class="nav-link" routerLink="/" (click)="isMenuCollapsed=true"><b>Home</b></a>
             </li>
             <li class="nav-item" [routerLinkActive]="['active']">
-                <a class="nav-link" routerLink="/login" (click)="isMenuCollapsed=true">Login</a>
+                <a class="nav-link" routerLink="/login" (click)="isMenuCollapsed=true"><b>Login</b></a>
             </li>
             <li class="nav-item" [routerLinkActive]="['active']">
-                <a class="nav-link" routerLink="/signup" (click)="isMenuCollapsed=true">Register</a>
+                <a class="nav-link" routerLink="/signup" (click)="isMenuCollapsed=true"><b>Register</b></a>
             </li>
         </ul>
         <ul *ngIf="loginStatus" class="navbar-nav">
             <input type="text" #input placeholder="Search" class="searchUser mt-1 rounded"
                 [ngbTypeahead]="profileService.typeahead" [(ngModel)]="profileService.model"
                 [inputFormatter]="profileService.formatter" [resultFormatter]="profileService.formatter"
-                [editable]="false" (selectItem)="redirectToUser($event,input)" ss>
+                [editable]="false" (selectItem)="redirectToUser($event,input)"  ss>
+               
+               
+
+<div *ngIf="profileService.model && !userExists(profileService.model)" class="userNotFound">
+  User not found.
+</div>
+
             <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
                 <a class="nav-link" routerLink="/home" (click)="isMenuCollapsed=true">Home</a>
             </li>

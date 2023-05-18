@@ -10,6 +10,10 @@ input[type="file"] {
   display: none;
 }
 
-img {
-  height: 46vh;
+.img-2 {
+  height:45px;
+  width: 45px;
+}
+.container-fluid {
+  background-image: url("https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-63998.jpg?w=2000");
 }
